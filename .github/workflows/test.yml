@@ -1,11 +1,11 @@
 name: Continuos Integration
 
 on:
-  pull_request:  
+  push:  
     branches: 
       [main]
-    types: 
-      [closed]
+    # types: 
+    #   [closed]
     
 
 jobs: 
@@ -14,8 +14,8 @@ jobs:
 
     # Caso algum desses passos falhe, o workflow todo vai falhar. 
     steps:
-      - name: Download Branch in virtual machine
-        uses: actions/checkout@v3
+      - name: Download da Branch na máquina virtual
+        uses: actions/checkout@v3 ##Copia os arquivos do repositório para dentro da máquina criada
       
       - name: Usar Node.js
         uses: actions/setup-node@v2
