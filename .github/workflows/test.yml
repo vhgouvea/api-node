@@ -23,10 +23,10 @@ jobs:
           node-version: 20.x
 
       - name: Instalar Dependências
-        run: npm install
+        run: npm run install
 
       - name: Rodar testes
-        run: npm test
+        run: npm run test
 
       # - name: Buildar Projeto
       #   run: npm run build
