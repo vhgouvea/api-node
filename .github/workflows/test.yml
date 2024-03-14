@@ -13,7 +13,7 @@ jobs:
     # Caso algum desses passos falhe, o workflow todo vai falhar. 
     steps:
       - name: Download da Branch na máquina virtual
-        uses: actions/checkout@v3 ##Copia os arquivos do repositório para dentro da máquina criada
+        uses: actions/checkout@v3 ##Copia os arquivos do repositório para dentro da máquina criada (ubuntu-latest)
       
       - name: Usar Node.js
         uses: actions/setup-node@v2
