@@ -1,4 +1,4 @@
-import { add, concatenateStrings, isEven } from ".";
+import { add, concatenateStrings, isEven } from "./function";
 
 test('soma dois números corretamente', () => {
   expect(add(3, 5)).toBe(8);

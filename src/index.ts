@@ -1,13 +1,18 @@
+import express, { Request, Response } from 'express';
+import bodyParser from 'body-parser';
 
-export function add(a: number, b: number): number {
-  return a + b;
-}
+const app = express();
+const PORT = 5001;
 
+// Middleware para analisar o corpo das solicitações
+app.use(bodyParser.json());
 
-export function concatenateStrings(str1: string, str2: string): string {
-  return str1 + str2;
-}
+// Rota de exemplo
+app.get('/', (req: Request, res: Response) => {
+  res.send('Bem-vindo à minha API!');
+});
 
-export function isEven(num: number): boolean {
-  return num % 2 === 0;
-}
+// Iniciar o servidor
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
