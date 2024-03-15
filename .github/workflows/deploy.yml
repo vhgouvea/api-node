@@ -1,13 +1,13 @@
 name: Push-to-EC2
 
 on:
-  pull_request:
+  push:
      
     branches:
       - main 
 
-    types:
-      - closed
+    # types:
+    #   - closed
 
       
 jobs:
