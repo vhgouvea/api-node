@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 // Rota de exemplo
 app.get('/', (req: Request, res: Response) => {
-  res.send('Bem-vindo à minha API!');
+  res.send('Bem-vindo à minha API!!');
 });
 
 // Iniciar o servidor
