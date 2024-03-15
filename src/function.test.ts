@@ -1,7 +1,7 @@
 import { add, concatenateStrings, isEven } from "./function";
 
 test('soma dois números corretamente', () => {
-  expect(add(3, 5)).toBe(8);
+  expect(add(3, 6)).toBe(8);
 });
 
 test('concatena duas strings corretamente', () => {
